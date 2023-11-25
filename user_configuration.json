@@ -1,0 +1,176 @@
+{
+    "additional-repositories": [],
+    "archinstall-language": "English",
+    "audio_config": {
+        "audio": "pulseaudio"
+    },
+    "bootloader": "Grub",
+    "config_version": "2.7.0",
+    "debug": false,
+    "disk_config": {
+        "config_type": "manual_partitioning",
+        "device_modifications": [
+            {
+                "device": "/dev/nvme0n1",
+                "partitions": [
+                    {
+                        "btrfs": [],
+                        "dev_path": "/dev/nvme0n1p1",
+                        "flags": [
+                            "Boot",
+                            "ESP"
+                        ],
+                        "fs_type": "fat32",
+                        "mount_options": [],
+                        "mountpoint": "/boot",
+                        "obj_id": "f6e23063-2778-46f3-bae4-1d829a1fa8c5",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 1073741824
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "sectors",
+                            "value": 2048
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": "/dev/nvme0n1p2",
+                        "flags": [],
+                        "fs_type": "",
+                        "mount_options": [],
+                        "mountpoint": "[SWAP]",
+                        "obj_id": "f44b9017-d24c-423c-a152-7842bb3c70a5",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 34359738368
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "sectors",
+                            "value": 2099200
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": "/dev/nvme0n1p3",
+                        "flags": [],
+                        "fs_type": "ext4",
+                        "mount_options": [],
+                        "mountpoint": "/",
+                        "obj_id": "3b83cc45-519c-4226-afc3-3f6390e175e0",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 476675309568
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "sectors",
+                            "value": 69208064
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    }
+                ],
+                "wipe": false
+            }
+        ]
+    },
+    "disk_encryption": {
+        "encryption_type": "luks",
+        "partitions": [
+            "3b83cc45-519c-4226-afc3-3f6390e175e0"
+        ]
+    },
+    "hostname": "archLaptop",
+    "kernels": [
+        "linux"
+    ],
+    "locale_config": {
+        "kb_layout": "pt-latin1",
+        "sys_enc": "UTF-8",
+        "sys_lang": "en_US"
+    },
+    "mirror_config": {
+        "custom_mirrors": [],
+        "mirror_regions": {
+            "Portugal": [
+                "https://mirrors.up.pt/pub/archlinux/$repo/os/$arch",
+                "https://mirror.barata.pt/archlinux/$repo/os/$arch",
+                "https://glua.ua.pt/pub/archlinux/$repo/os/$arch",
+                "https://ftp.rnl.tecnico.ulisboa.pt/pub/archlinux/$repo/os/$arch",
+                "http://mirrors.up.pt/pub/archlinux/$repo/os/$arch",
+                "http://mirror.barata.pt/archlinux/$repo/os/$arch",
+                "http://glua.ua.pt/pub/archlinux/$repo/os/$arch",
+                "http://ftp.rnl.tecnico.ulisboa.pt/pub/archlinux/$repo/os/$arch"
+            ]
+        }
+    },
+    "network_config": {
+        "nics": [
+            {
+                "dhcp": false,
+                "dns": [
+                    "1.1.1.1",
+                    "8.8.8.8",
+                    "8.8.4.4"
+                ],
+                "gateway": "192.168.1.1",
+                "iface": "wlp1s0",
+                "ip": "192.168.1.72/24"
+            }
+        ],
+        "type": "manual"
+    },
+    "no_pkg_lookups": false,
+    "ntp": true,
+    "offline": false,
+    "packages": [
+        "vim",
+        "firefox"
+    ],
+    "parallel downloads": 0,
+    "profile_config": {
+        "gfx_driver": null,
+        "greeter": null,
+        "profile": {
+            "custom_settings": {},
+            "details": [],
+            "main": "Minimal"
+        }
+    },
+    "script": "guided",
+    "silent": false,
+    "skip_ntp": false,
+    "skip_version_check": false,
+    "swap": true,
+    "timezone": "UTC",
+    "uki": false,
+    "version": "2.7.0"
+}
