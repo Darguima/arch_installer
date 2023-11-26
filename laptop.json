@@ -47,7 +47,7 @@
                         "btrfs": [],
                         "dev_path": "/dev/nvme0n1p2",
                         "flags": [],
-                        "fs_type": "",
+                        "fs_type": "ext4",
                         "mount_options": [],
                         "mountpoint": "[SWAP]",
                         "obj_id": "f44b9017-d24c-423c-a152-7842bb3c70a5",
@@ -169,7 +169,7 @@
     "silent": false,
     "skip_ntp": false,
     "skip_version_check": false,
-    "swap": true,
+    "swap": false,
     "timezone": "UTC",
     "uki": false,
     "version": "2.7.0"
