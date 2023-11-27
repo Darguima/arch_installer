@@ -1,0 +1,59 @@
+{
+    "additional-repositories": [],
+    "archinstall-language": "English",
+    "audio_config": {
+        "audio": "pulseaudio"
+    },
+    "bootloader": "Grub",
+    "config_version": "2.7.0",
+    "debug": false,
+    "disk_config": {},
+    "kernels": [
+        "linux"
+    ],
+    "locale_config": {
+        "kb_layout": "pt-latin1",
+        "sys_enc": "UTF-8",
+        "sys_lang": "en_US"
+    },
+    "mirror_config": {
+        "custom_mirrors": [],
+        "mirror_regions": {
+            "Portugal": [
+                "https://mirrors.up.pt/pub/archlinux/$repo/os/$arch",
+                "https://mirror.barata.pt/archlinux/$repo/os/$arch",
+                "https://glua.ua.pt/pub/archlinux/$repo/os/$arch",
+                "https://ftp.rnl.tecnico.ulisboa.pt/pub/archlinux/$repo/os/$arch",
+                "http://mirrors.up.pt/pub/archlinux/$repo/os/$arch",
+                "http://mirror.barata.pt/archlinux/$repo/os/$arch",
+                "http://glua.ua.pt/pub/archlinux/$repo/os/$arch",
+                "http://ftp.rnl.tecnico.ulisboa.pt/pub/archlinux/$repo/os/$arch"
+            ]
+        }
+    },
+    "no_pkg_lookups": false,
+    "ntp": true,
+    "offline": false,
+    "packages": [
+        "vim",
+        "firefox"
+    ],
+    "parallel downloads": 0,
+    "profile_config": {
+        "gfx_driver": null,
+        "greeter": null,
+        "profile": {
+            "custom_settings": {},
+            "details": [],
+            "main": "Minimal"
+        }
+    },
+    "script": "guided",
+    "silent": false,
+    "skip_ntp": false,
+    "skip_version_check": false,
+    "swap": false,
+    "timezone": "UTC",
+    "uki": false,
+    "version": "2.7.0"
+}

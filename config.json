@@ -29,16 +29,16 @@
                                 "unit": "B",
                                 "value": 512
                             },
-                            "unit": "B",
-                            "value": 1073741824
+                            "unit": "MiB",
+                            "value": 1023
                         },
                         "start": {
                             "sector_size": {
                                 "unit": "B",
                                 "value": 512
                             },
-                            "unit": "sectors",
-                            "value": 2048
+                            "unit": "MiB",
+                            "value": 1
                         },
                         "status": "create",
                         "type": "primary"
@@ -56,16 +56,16 @@
                                 "unit": "B",
                                 "value": 512
                             },
-                            "unit": "B",
-                            "value": 34359738368
+                            "unit": "GiB",
+                            "value": 32
                         },
                         "start": {
                             "sector_size": {
                                 "unit": "B",
                                 "value": 512
                             },
-                            "unit": "sectors",
-                            "value": 2099200
+                            "unit": "GiB",
+                            "value": 1
                         },
                         "status": "create",
                         "type": "primary"
@@ -83,16 +83,16 @@
                                 "unit": "B",
                                 "value": 512
                             },
-                            "unit": "B",
-                            "value": 476675309568
+                            "unit": "GiB",
+                            "value": 443.9
                         },
                         "start": {
                             "sector_size": {
                                 "unit": "B",
                                 "value": 512
                             },
-                            "unit": "sectors",
-                            "value": 69208064
+                            "unit": "GiB",
+                            "value": 33
                         },
                         "status": "create",
                         "type": "primary"
@@ -102,13 +102,6 @@
             }
         ]
     },
-    "disk_encryption": {
-        "encryption_type": "luks",
-        "partitions": [
-            "3b83cc45-519c-4226-afc3-3f6390e175e0"
-        ]
-    },
-    "hostname": "archLaptop",
     "kernels": [
         "linux"
     ],
@@ -131,22 +124,6 @@
                 "http://ftp.rnl.tecnico.ulisboa.pt/pub/archlinux/$repo/os/$arch"
             ]
         }
-    },
-    "network_config": {
-        "nics": [
-            {
-                "dhcp": false,
-                "dns": [
-                    "1.1.1.1",
-                    "8.8.8.8",
-                    "8.8.4.4"
-                ],
-                "gateway": "192.168.1.1",
-                "iface": "wlp1s0",
-                "ip": "192.168.1.72/24"
-            }
-        ],
-        "type": "manual"
     },
     "no_pkg_lookups": false,
     "ntp": true,
@@ -172,5 +149,28 @@
     "swap": false,
     "timezone": "UTC",
     "uki": false,
-    "version": "2.7.0"
+    "version": "2.7.0",
+    "hostname": "archLaptop",
+    "disk_encryption": {
+        "encryption_type": "luks",
+        "partitions": [
+            "3b83cc45-519c-4226-afc3-3f6390e175e0"
+        ]
+    },
+    "network_config": {
+        "nics": [
+            {
+                "dhcp": false,
+                "dns": [
+                    "1.1.1.1",
+                    "8.8.8.8",
+                    "8.8.4.4"
+                ],
+                "gateway": "192.168.1.1",
+                "iface": "wlp1s0",
+                "ip": "192.168.1.72/24"
+            }
+        ],
+        "type": "manual"
+    }
 }
