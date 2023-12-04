@@ -116,5 +116,9 @@
                 "wipe": false
             }
         ]
-    }
+    },
+    "custom-commands": [
+        "mkswap /dev/nvme0n1p2",
+        "swapon /dev/nvme0n1p2"
+    ]
 }
