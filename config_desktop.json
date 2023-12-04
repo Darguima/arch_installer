@@ -1,5 +1,5 @@
 {
-    "hostname": "archLaptop",  
+    "hostname": "archDesktop",
     "network_config": {
         "nics": [
             {
@@ -11,17 +11,12 @@
                 ],
                 "gateway": "192.168.1.1",
                 "iface": "wlp1s0",
-                "ip": "192.168.1.72/24"
+                "ip": "192.168.1.70/24"
             }
         ],
         "type": "manual"
     },
-    "disk_encryption": {
-        "encryption_type": "luks",
-        "partitions": [
-            "3b83cc45-519c-4226-afc3-3f6390e175e0"
-        ]
-    },
+    "disk_encryption": null,
     "disk_config": {
         "config_type": "manual_partitioning",
         "device_modifications": [
@@ -38,7 +33,7 @@
                         "fs_type": "fat32",
                         "mount_options": [],
                         "mountpoint": "/boot",
-                        "obj_id": "f6e23063-2778-46f3-bae4-1d829a1fa8c5",
+                        "obj_id": "8c7a35ed-508a-4c1a-8fef-f02c9885827b",
                         "size": {
                             "sector_size": {
                                 "unit": "B",
@@ -65,7 +60,7 @@
                         "fs_type": "ext4",
                         "mount_options": [],
                         "mountpoint": "[SWAP]",
-                        "obj_id": "f44b9017-d24c-423c-a152-7842bb3c70a5",
+                        "obj_id": "c06056bb-6bf3-4891-9a1f-048af71c6c75",
                         "size": {
                             "sector_size": {
                                 "unit": "B",
@@ -92,14 +87,14 @@
                         "fs_type": "ext4",
                         "mount_options": [],
                         "mountpoint": "/",
-                        "obj_id": "3b83cc45-519c-4226-afc3-3f6390e175e0",
+                        "obj_id": "5fa3cae1-1033-494d-a05a-f57b543dc1a2",
                         "size": {
                             "sector_size": {
                                 "unit": "B",
                                 "value": 512
                             },
                             "unit": "GiB",
-                            "value": 443.9
+                            "value": 250
                         },
                         "start": {
                             "sector_size": {
