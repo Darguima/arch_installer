@@ -1,6 +1,8 @@
 # Arch Installer
 
-On this repo are available the configurations files for my 2 setups, alongside the Python script that I use to merge them.
+On this repo are available the configurations files for my 2 Arch Linux setups, installed with `archinstall`.
+
+This repository is a complement to my [dotfiles](https://github.com/darguima/dotfiles). So my Window Manager, the applications that I use and their configurations will not be installed now.
 
 ## Running the script
 
@@ -21,4 +23,4 @@ If everything goes right you should have a ready Arch setup.
 
 ## And now?
 
-This repository is a complement to my [dotfiles](https://github.com/darguima/dotfiles). So my Window Manager and tools configurations are there.
+Access my [dotfiles](https://github.com/darguima/dotfiles) and install the remaining configurations.
