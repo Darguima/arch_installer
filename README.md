@@ -6,7 +6,14 @@ This repository is a complement to my [dotfiles](https://github.com/darguima/dot
 
 ## Running the script
 
-After clone the repo to your clean setup, run the following command:
+Clone the repo. Usually you will also need install `git` on fresh machines:
+
+```bash
+$ pacman -Sy git
+$ git clone https://github.com/Darguima/arch_installer
+```
+
+Now generate the correct configuration with this helper:
 
 ```bash
 $ python main.py
