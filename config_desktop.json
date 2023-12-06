@@ -114,6 +114,7 @@
     },
     "custom-commands": [
         "mkswap /dev/nvme0n1p2",
-        "swapon /dev/nvme0n1p2"
+        "swapon /dev/nvme0n1p2",
+        "echo \"/dev/nvme0n1p2  none            swap            defaults        0 0\" >> /etc/fstab"
     ]
 }
