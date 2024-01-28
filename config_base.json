@@ -49,6 +49,7 @@
             "main": "Minimal"
         }
     },
+    "custom-commands": [ "cp ./assets/etc_hosts /etc/hosts" ],
     "script": "guided",
     "silent": false,
     "skip_ntp": false,

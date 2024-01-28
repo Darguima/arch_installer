@@ -3,8 +3,19 @@ import json
 
 def merge_dicts(*dicts):
     result = {}
+
     for d in dicts:
-        result.update(d)
+
+      for key, value in d.items():
+        if key in result and isinstance(result[key], dict) and isinstance(value, dict):
+            result[key] = merge_dicts(result[key], value)
+          
+        elif key in result and isinstance(result[key], list) and isinstance(value, list):
+            result[key] = result[key] + value
+          
+        else:
+            result[key] = value
+
     return result
 
 def merge_json(environment):
