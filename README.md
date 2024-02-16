@@ -6,6 +6,8 @@ This repository is a complement to my [dotfiles](https://github.com/darguima/dot
 
 ## Running the script
 
+First ensure that you are connected to internet - you can read the official [documentation](https://wiki.archlinux.org/title/Installation_guide#Connect_to_the_internet).
+
 Clone the repo. Usually you will also need install `git` on fresh machines:
 
 ```bash
