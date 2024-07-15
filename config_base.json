@@ -51,7 +51,10 @@
             "main": "Minimal"
         }
     },
-    "custom-commands": [ "curl https://raw.githubusercontent.com/Darguima/arch_installer/master/assets/etc_hosts -o /etc/hosts" ],
+    "custom-commands": [
+        "curl https://raw.githubusercontent.com/Darguima/arch_installer/master/assets/etc_hosts -o /etc/hosts",
+        "systemctl enable NetworkManager"
+    ],
     "script": "guided",
     "silent": false,
     "skip_ntp": false,
