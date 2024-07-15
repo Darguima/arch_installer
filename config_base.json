@@ -49,7 +49,7 @@
             "main": "Minimal"
         }
     },
-    "custom-commands": [ "cp ./assets/etc_hosts /etc/hosts" ],
+    "custom-commands": [ "curl https://raw.githubusercontent.com/Darguima/arch_installer/master/assets/etc_hosts -o /etc/hosts" ],
     "script": "guided",
     "silent": false,
     "skip_ntp": false,
