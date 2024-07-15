@@ -37,6 +37,8 @@
     "offline": false,
     "packages": [
         "vim",
+        "networkmanager",
+        "git",
         "firefox"
     ],
     "parallel downloads": 0,
