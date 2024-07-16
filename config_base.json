@@ -12,7 +12,7 @@
         "linux"
     ],
     "locale_config": {
-        "kb_layout": "pt-latin1",
+        "kb_layout": "us-acentos",
         "sys_enc": "UTF-8",
         "sys_lang": "en_US"
     },
