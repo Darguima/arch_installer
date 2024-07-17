@@ -15,7 +15,7 @@ $ pacman -Sy git
 $ git clone https://github.com/Darguima/arch_installer
 ```
 
-Start by giving a look at the `assets` folder, editing the respective files to what best fit to you. (eg: you may want to adapt the `/etc/hosts` file)
+Start by giving a look at the `assets` folder, ~~editing the respective files to what best fit to you~~ but edit them will not take any effect, since due `archinstall` limitations, I'm downloading the files on the setup from the Github repository. (eg: you may want to adapt the `/etc/hosts` file)
 
 Now generate the correct configuration with this helper:
 
