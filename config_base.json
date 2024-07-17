@@ -60,7 +60,7 @@
     "skip_ntp": false,
     "skip_version_check": false,
     "swap": false,
-    "timezone": "UTC",
+    "timezone": "Europe/Lisbon",
     "uki": false,
     "version": "2.7.0"
 }
