@@ -2,3 +2,6 @@ user_configuration.json
 user_credentials.json
 
 __pycache__/
+
+cmd_history.txt
+install.log

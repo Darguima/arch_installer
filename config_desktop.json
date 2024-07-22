@@ -17,15 +17,16 @@
         "type": "manual"
     },
     "disk_encryption": null,
+    "swap": true,
     "disk_config": {
-        "config_type": "manual_partitioning",
+        "config_type": "default_layout",
         "device_modifications": [
             {
                 "device": "/dev/nvme0n1",
                 "partitions": [
                     {
                         "btrfs": [],
-                        "dev_path": "/dev/nvme0n1p1",
+                        "dev_path": "null",
                         "flags": [
                             "Boot",
                             "ESP"
@@ -33,43 +34,8 @@
                         "fs_type": "fat32",
                         "mount_options": [],
                         "mountpoint": "/boot",
-                        "obj_id": "8c7a35ed-508a-4c1a-8fef-f02c9885827b",
+                        "obj_id": "edc2abd6-8d0a-419a-9e4c-1587b81c83bb",
                         "size": {
-                            "sector_size": {
-                                "unit": "B",
-                                "value": 512
-                            },
-                            "unit": "MiB",
-                            "value": 1023
-                        },
-                        "start": {
-                            "sector_size": {
-                                "unit": "B",
-                                "value": 512
-                            },
-                            "unit": "MiB",
-                            "value": 1
-                        },
-                        "status": "create",
-                        "type": "primary"
-                    },
-                    {
-                        "btrfs": [],
-                        "dev_path": "/dev/nvme0n1p2",
-                        "flags": [],
-                        "fs_type": "ext4",
-                        "mount_options": [],
-                        "mountpoint": "[SWAP]",
-                        "obj_id": "c06056bb-6bf3-4891-9a1f-048af71c6c75",
-                        "size": {
-                            "sector_size": {
-                                "unit": "B",
-                                "value": 512
-                            },
-                            "unit": "GiB",
-                            "value": 32
-                        },
-                        "start": {
                             "sector_size": {
                                 "unit": "B",
                                 "value": 512
@@ -77,44 +43,47 @@
                             "unit": "GiB",
                             "value": 1
                         },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "sectors",
+                            "value": 2048
+                        },
                         "status": "create",
                         "type": "primary"
                     },
                     {
                         "btrfs": [],
-                        "dev_path": "/dev/nvme0n1p3",
+                        "dev_path": null,
                         "flags": [],
                         "fs_type": "ext4",
                         "mount_options": [],
                         "mountpoint": "/",
-                        "obj_id": "5fa3cae1-1033-494d-a05a-f57b543dc1a2",
+                        "obj_id": "2d1222af-bf56-4ecf-9e43-db43a4fe7095",
                         "size": {
                             "sector_size": {
                                 "unit": "B",
                                 "value": 512
                             },
-                            "unit": "GiB",
-                            "value": 250
+                            "unit": "B",
+                            "value": 302795194368
                         },
                         "start": {
                             "sector_size": {
                                 "unit": "B",
                                 "value": 512
                             },
-                            "unit": "GiB",
-                            "value": 33
+                            "unit": "sectors",
+                            "value": 2099200
                         },
                         "status": "create",
                         "type": "primary"
                     }
                 ],
-                "wipe": false
+                "wipe": true
             }
         ]
-    },
-    "custom-commands": [
-        "mkswap /dev/nvme0n1p2",
-        "swapon /dev/nvme0n1p2",
-        "echo \"/dev/nvme0n1p2  none            swap            defaults        0 0\" >> /etc/fstab"
-    ]
+    }
 }
