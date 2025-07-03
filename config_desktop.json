@@ -85,5 +85,10 @@
                 "wipe": true
             }
         ]
-    }
+    },
+    "custom-commands": [
+        "mkdir -p /run/media/darguima/HDD_Drive",
+        "chown darguima:darguima /run/media/darguima -R",
+        "grep -q \"/run/media/darguima/HDD_Drive\" /etc/fstab || echo -e \"\n# /dev/sda1\nUUID=f591b311-fbf3-4ba2-a87d-cdd25dcef47a /run/media/darguima/HDD_Drive ext4 defaults,user,auto 0 2\" | sudo tee -a /etc/fstab > /dev/null"
+    ]
 }
